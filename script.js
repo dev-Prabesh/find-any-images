@@ -29,6 +29,14 @@ button.addEventListener("click", () => {
     fetchData();
 })
 
+input.addEventListener("keydown", (e) => {
+    dataContents.innerHTML = " ";
+    if(e.key === "Enter"){
+        fetchData();
+    }
+})
+
+
 let count = 1;
 showMore.addEventListener("click", () => {
     count++;
